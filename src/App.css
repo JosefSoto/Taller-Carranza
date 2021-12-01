@@ -150,6 +150,7 @@ header h1{
     margin-top: .3em;
     margin-bottom: .3em;
     color: var(--oscuro);
+    text-transform: capitalize;
 }
 header .datos_usuarios{
     min-width: 14.5em;
