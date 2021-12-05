@@ -21,7 +21,7 @@ h1, h2, h3, h4{
 form input, select {
     border:none;
     border-bottom:.1em solid var(--oscuro);
-    width: 40%;
+    width: 48%;
 }
 form input[type="file"]{
     border:none;
@@ -42,6 +42,7 @@ form input[type="file"]{
     color: var(--turqui);
     cursor: pointer;
     transition: all .5s ease;
+    text-align: center;
     
 }
 .boton:hover{
@@ -54,8 +55,8 @@ form input[type="file"]{
 .btn-equis{    
     position:absolute;
     font-size: 2em;
-    top: .2em;
-    left: 93%;
+    top: .1em;
+    left: 90%;
     cursor: pointer;
 }
 .campo-buscar{
@@ -327,16 +328,18 @@ footer p {
 /* ======================= Modal ====================== */
 
 .fondo-modal{
-    background-color: rgba(4, 4, 4, .3);;
+    background-color: rgba(1, 1, 1, .7);;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh; 
-    display:flex;
+    display:none;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
+}
+.visible{
+    display: flex;
 }
 .modal{
     max-width: 50%;
@@ -346,11 +349,11 @@ footer p {
     border-radius: 1.5em;
     position: relative;
 }
-.modal h2{
+.modal>h2{
     padding: .5em;
     border-bottom: .1em solid var(--azul);
 }
-.modal form{
+.modal>form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,6 +365,15 @@ footer p {
 }
 .modal form input, select{
     margin: 1em; 
+}
+.selectores{
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal>.selectores>label{
+    padding: .2em;
+    margin: .2em;
+
 }
 
 

@@ -1,4 +1,3 @@
-
 import './App.css';
 import {useState} from 'react';
 import Navegador from './componentes/navegador';
@@ -7,7 +6,7 @@ import Tabla from './componentes/tabla';
 
 function App() {
   //const [usuario, setusuario] = useState('administrador')
-  const [seccion, setSeccion] = useState("servicios")
+  const [seccion, setSeccion] = useState("clientes")
   
   function obtenerDatosTabla(SecciónRecibida){
     let respuesta = []
