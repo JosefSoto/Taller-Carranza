@@ -260,7 +260,7 @@ header .datos_usuarios a{
     -moz-box-shadow: 4px 4px 3px 1px rgba(34,34,34,0.2);
     box-shadow: 4px 4px 3px 1px rgba(34,34,34,0.2);
 }
-.datos-vuelos form{
+.datos-vuelos>form{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -358,19 +358,18 @@ footer p {
     flex-direction: column;
     justify-content: center;
 }
-.modal form div{
+.modal>form>div{
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
-.modal form input, select{
+.modal>form>div>input, select,p{
     margin: 1em; 
 }
 .selectores{
     display: flex;
-    flex-wrap: wrap;
 }
-.modal>.selectores>label{
+.modal>form>.selectores>label{
     padding: .2em;
     margin: .2em;
 

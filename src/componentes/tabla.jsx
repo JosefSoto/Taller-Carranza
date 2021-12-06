@@ -44,9 +44,10 @@ export default function Tabla({datosTabla, seccion}){
                                 <option value="Retrasado" className="estado_naranja">Retrasado</option>
                             </select>
                         </div>
-                        <p>Servicios:</p>
-                        <div className="selectores">
-                            {/* 
+                        <div>
+                            <p>Servicios:</p>
+                        </div>
+                        <span className="selectores">
                             <label><input type="checkbox" value="first_checkbox"></input>Revisión de frenos</label>
                             <label><input type="checkbox" value="first_checkbox"></input>Pastillas</label>
                             <label><input type="checkbox" value="first_checkbox"></input>Discos</label>
@@ -54,9 +55,8 @@ export default function Tabla({datosTabla, seccion}){
                             <label><input type="checkbox" value="first_checkbox"></input>Cambio de aceite</label>
                             <label><input type="checkbox" value="first_checkbox"></input>Rotacion de llantas</label>
                             <label><input type="checkbox" value="first_checkbox"></input>alineación y balanceo </label>
-                            <label><input type="checkbox" value="first_checkbox"></input>Revisión de frenos</label> */}
-                            
-                        </div>                     
+                            <label><input type="checkbox" value="first_checkbox"></input>Revisión de frenos</label>
+                        </span>               
                         <span className="botonera">
                             <input type="reset" value="Descartar" className="boton"></input>
                             <input type="submit" value="Guardar cambios" className="boton"></input>
