@@ -3,7 +3,7 @@ export default function Navegador({seccion, setSeccion, setdatosTabla, obtenerDa
     return(
         <nav>
             <div className="logo">
-                <img src="/logo192.png"></img> 
+                <img src="/logo192.jpg"></img> 
             </div> 
             <ul>
                 <li><a className={seccion==="clientes"?"btn-navegador btn-navegador-activo":"btn-navegador"} 
