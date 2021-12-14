@@ -3,9 +3,10 @@ import {useState} from 'react';
 import Navegador from './componentes/navegador';
 import Cabecera from './componentes/cabecera';
 import Tabla from './componentes/tabla';
+import Login from './componentes/login';
 
 function App() {
-  //const [usuario, setusuario] = useState('administrador')
+  const [usuario, setusuario] = useState('')
   const [seccion, setSeccion] = useState("clientes")
   
   function obtenerDatosTabla(SecciónRecibida){
@@ -53,21 +54,27 @@ function App() {
   }
   const [datosTabla, setdatosTabla] = useState(obtenerDatosTabla(seccion))
   
-  return (
-    <div className="raiz">
-      <Navegador 
-      setSeccion = {setSeccion} 
-      seccion ={seccion} 
-      setdatosTabla={setdatosTabla} 
-      obtenerDatosTabla={obtenerDatosTabla}
-      />
-        <div className="principal">
-          <Cabecera seccion ={seccion}/>
-          <section className="buscador-tabla">
-            <Tabla datosTabla={datosTabla} seccion ={seccion}/>
-          </section>
-        </div>
-    </div>
-  );
+  if (usuario === 'cico'){
+    return(
+      <Login usuario = {usuario} setusuario = {setusuario}/>
+    )
+  }else{
+    return (
+      <div className="raiz">
+        <Navegador 
+        setSeccion = {setSeccion} 
+        seccion ={seccion} 
+        setdatosTabla={setdatosTabla} 
+        obtenerDatosTabla={obtenerDatosTabla}
+        />
+          <div className="principal">
+            <Cabecera seccion ={seccion}/>
+            <section className="buscador-tabla">
+              <Tabla datosTabla={datosTabla} seccion ={seccion}/>
+            </section>
+          </div>
+      </div>
+    )
+  }
 }
 export default App;
