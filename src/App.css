@@ -284,7 +284,7 @@ header .datos_usuarios a{
     height: 3em;
     width: 100%;
     background-color: var(--naranja);
-    color:  #ffffff;
+    color: (var(--turqui));
     border-radius: 1em 1em 0 0;
 }
 .tabla td{

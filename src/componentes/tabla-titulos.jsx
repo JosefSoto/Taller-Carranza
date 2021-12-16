@@ -37,6 +37,12 @@ export default function Titulo({seccion}){
                     <th>Estado</th>                                    
                 </tr>
         )
+        case "reportes":
+            return (
+                <tr>
+                                                      
+                </tr>
+        )
         default:
             // code block   
     }

@@ -50,13 +50,7 @@ export default function Datos({seccion, datosTabla}){
         case "reportes":
             return (
                 <tr>
-                    <th><input type="checkbox"></input></th>
-                    <th>Nombre</th>
-                    <th>apellido</th>
-                    <th>Fecha Cita</th>
-                    <th>Servicios</th>
-                    <th>Comentarios</th>
-                    <th>Estado</th>                                    
+                                                      
                 </tr>
         )
         default:
