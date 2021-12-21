@@ -37,15 +37,18 @@ export default function Datos({seccion, datosTabla}){
             )
         case "usuarios":
             return (
-                <tr>
-                    <th><input type="checkbox"></input></th>
-                    <th>Nombre</th>
-                    <th>apellido</th>
-                    <th>Fecha Cita</th>
-                    <th>Servicios</th>
-                    <th>Comentarios</th>
-                    <th>Estado</th>                                    
-                </tr>
+                <>
+                    {datosTabla.map(celda=>(
+                        <tr>
+                            <td><input type="checkbox"></input></td>
+                            <td>{celda.nombre}</td>
+                            <td>{celda.documento}</td>
+                            <td>{celda.telefono}</td>
+                            <td>{celda.correo}</td>
+                            <td>{celda.tipo}</td>                                    
+                        </tr>
+                    ))}
+                </>
         )
         case "reportes":
             return (
@@ -54,6 +57,10 @@ export default function Datos({seccion, datosTabla}){
                 </tr>
         )
         default:
-            // code block   
+            return (
+                <>
+                    cargando...
+                </>
+            )   
     }
 }

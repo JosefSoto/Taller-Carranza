@@ -30,11 +30,10 @@ export default function Titulo({seccion}){
                 <tr>
                     <th><input type="checkbox"></input></th>
                     <th>Nombre</th>
-                    <th>apellido</th>
-                    <th>Fecha Cita</th>
-                    <th>Servicios</th>
-                    <th>Comentarios</th>
-                    <th>Estado</th>                                    
+                    <th>Documento</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Tipo</th>                                   
                 </tr>
         )
         case "reportes":
